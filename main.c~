@@ -44,7 +44,6 @@ int main(void)
 			}
 		}
 		printf("result = %.2f %.2f\n", result.real_number, result.imaginary_number);
-		sleep(1000000000);
 	}
 	return 0;
 }
