@@ -8,7 +8,7 @@ int main(void)
 	
 	while(1)
 	{
-		printf("1)Add\n2)Sub\n3)Div\n4)Mul\n5)Quit\nEnter the operation and numbers\n>");
+	start:	printf("1)Add\n2)Sub\n3)Div\n4)Mul\n5)Quit\nEnter the operation and numbers\n>");
 		scanf("%d", &operation);
 		if (operation == 5)
 			break;
@@ -34,6 +34,11 @@ int main(void)
 			{
 				complex_mul(&com_num1, &com_num2, &result);
 				break;
+			}
+			default:
+			{
+				printf("Error\n");
+				goto start;
 			}
 		}
 		printf("result = %.2f %.2f\n", result.real_number, result.imaginary_number);
