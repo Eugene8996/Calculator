@@ -13,7 +13,7 @@ int main(void)
 		scanf("%s", buffer);
 		if (sscanf(buffer, "%d", &operation) != 1)
 		{
-			printf("Error\n");
+			printf("Error!\n");
 			continue;
 		}
 		if (operation == 5)
