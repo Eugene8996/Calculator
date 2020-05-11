@@ -55,3 +55,6 @@ $(LIB_PATH)$(LIB_DIV):
 $(LIB_PATH)$(LIB_MUL): 
 	gcc -fPIC -c $(LIB_PATH)$(LIB_SRC_MUL) -o $(LIB_PATH)$(LIB_OBJ_MUL)
 	gcc -shared $(LIB_PATH)$(LIB_OBJ_MUL) -o $(LIB_PATH)$(LIB_MUL_SO)
+
+clean:
+	rm -f $(EXEC) $(LIB_PATH)*.o $(LIB_PATH)*.so
